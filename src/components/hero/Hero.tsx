@@ -27,18 +27,26 @@ function Hero() {
           <span className="text-white">{currentText}</span>
         </p>
 
-        <img
-          src="perfil.jpg"
-          alt="Bruno"
-          className="mx-auto mt-10 rounded-full w-96 h-96 object-cover"
-        />
+        <a
+          href="https://github.com/brunoalexb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <img
+            src="perfil.jpg"
+            alt="Bruno"
+            className="mx-auto mt-10 rounded-full w-96 h-96 object-cover transition-transform duration-300 hover:scale-110"
+          />
+        </a>
 
         <a
-          href="#projects"
-          className="mt-8 inline-block bg-white text-black text-3xl px-6 py-2 rounded-lg shadow-lg hover:bg-gray-100"
+          href="/curriculo.pdf"
+          className="mt-10 inline-block border-2 border-white bg-gray-800 text-white text-2xl px-6 py-2 rounded-2xl shadow-lg hover:bg-gray-700 transition-transform duration-300 hover:scale-110"
         >
-          Ver Projetos
+          Download CV
         </a>
+
       </div>
     </section>
   );
